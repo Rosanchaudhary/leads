@@ -2,13 +2,11 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:leads/controller/chip_controller.dart';
 import 'package:leads/models/lead_model.dart';
 
 class DataController extends GetxController {
   List<LeadModel>? lead;
   var isDataLoading = false.obs;
-  final ChipController _chipController = Get.put(ChipController());
 
   @override
   Future<void> onInit() async {
@@ -27,10 +25,18 @@ class DataController extends GetxController {
         lead = leads;
         break;
       case Filters.Rescent:
-        lead = leads.where((data) => data.queryModel.status== 'CLOSED').toList();
+        lead = leads
+            .where((data) =>
+                DateTime.parse(data.datetime).year ==
+                DateTime.parse(DateTime.now().toString()).year &&
+                DateTime.parse(data.datetime).month ==
+                DateTime.parse(DateTime.now().toString()).month &&
+                DateTime.parse(data.datetime).day ==
+                DateTime.parse(DateTime.now().toString()).day)
+            .toList();
         break;
       case Filters.Accepted:
-        lead = leads.where((data) => data.status== 'ACCEPTED').toList();
+        lead = leads.where((data) => data.status == 'ACCEPTED').toList();
         break;
       case Filters.Other:
         lead = leads;

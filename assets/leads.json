@@ -20,10 +20,22 @@
         },
         {
             "id": 3,
-            "query_id": 8989,
+            "query_id": 8989, 
             "type": "IMAGE",
             "content": "https://images.pexels.com/photos/13517201/pexels-photo-13517201.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-        }
+        },
+        {
+          "id": 4,
+          "query_id": 8989, 
+          "type": "VIDEO",
+          "content": "https://images.pexels.com/photos/13517201/pexels-photo-13517201.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+      },
+      {
+        "id": 5,
+        "query_id": 8989, 
+        "type": "AUDIO",
+        "content": "https://images.pexels.com/photos/13517201/pexels-photo-13517201.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+    }
       ]
     },
 
@@ -47,5 +59,27 @@
               "content": "https://images.pexels.com/photos/13359140/pexels-photo-13359140.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
           }
         ]
-      }
+      },
+      
+    {
+      "id": 14,
+      "datetime": "2022-09-07T16:16:00.000Z",
+      "status":"ACCEPTED",
+      "query": {
+        "id": 8990,
+        "datetime": "2022-08-18T08:21:00.000Z",
+        "from": "9232********",
+        "category": "hardware store",
+        "type": "SINGLE_SERVE",
+        "status": "ACCEPTED"
+      },
+      "query_messages": [
+        {
+            "id": 50,
+            "query_id": 8990,
+            "type": "IMAGE",
+            "content": "https://images.pexels.com/photos/13359140/pexels-photo-13359140.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+        }
+      ]
+    }
 ]
