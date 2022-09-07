@@ -1,0 +1,51 @@
+[   
+    {
+      "id": 12,
+      "datetime": "2022-08-18T08:21:00.000Z",
+      "status":"NOT ACCEPTED",
+      "query": {
+        "id": 8989,
+        "datetime": "2022-08-18T08:21:00.000Z",
+        "from": "9232********",
+        "category": "hardware store", 
+        "type": "SINGLE_SERVE",
+        "status": "CLOSED"
+      },
+      "query_messages": [
+        {
+          "id": 2,
+          "query_id": 8989,
+          "type": "TEXT",
+          "content": "This is test text message"
+        },
+        {
+            "id": 3,
+            "query_id": 8989,
+            "type": "IMAGE",
+            "content": "https://images.pexels.com/photos/13517201/pexels-photo-13517201.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+        }
+      ]
+    },
+
+    {
+        "id": 13,
+        "datetime": "2022-08-18T08:21:00.000Z",
+        "status":"ACCEPTED",
+        "query": {
+          "id": 8990,
+          "datetime": "2022-08-18T08:21:00.000Z",
+          "from": "9232********",
+          "category": "hardware store",
+          "type": "SINGLE_SERVE",
+          "status": "ACCEPTED"
+        },
+        "query_messages": [
+          {
+              "id": 50,
+              "query_id": 8990,
+              "type": "IMAGE",
+              "content": "https://images.pexels.com/photos/13359140/pexels-photo-13359140.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+          }
+        ]
+      }
+]
