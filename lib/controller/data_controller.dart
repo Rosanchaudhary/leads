@@ -36,7 +36,7 @@ class DataController extends GetxController {
             .toList();
         break;
       case Filters.Accepted:
-        lead = leads.where((data) => data.status == 'ACCEPTED').toList();
+        lead = leads.where((data) => data.queryModel.status == 'ACCEPTED').toList();
         break;
       case Filters.Other:
         lead = leads;

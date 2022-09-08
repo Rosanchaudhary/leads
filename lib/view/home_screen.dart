@@ -12,13 +12,12 @@ class HomeScreen extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          
           //shape:const Border(bottom: BorderSide(color: Colors.black,width: 0.5)),
-          titleSpacing: 100,
+          centerTitle: true,
           elevation: 0.0,
           backgroundColor: Colors.white,
           bottom: const TabBar(
-            padding: EdgeInsets.symmetric(horizontal:8.0), 
+            padding: EdgeInsets.symmetric(horizontal: 8.0),
             indicatorColor: Colors.black,
             tabs: [
               Tab(
@@ -55,6 +54,5 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
     );
-    
   }
 }
