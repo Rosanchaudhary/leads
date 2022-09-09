@@ -7,7 +7,7 @@ import 'package:leads/view/widgets/lead_card.dart';
 
 import 'widgets/filter_tabs.dart';
 
-class LeadScreen extends StatelessWidget {
+class LeadScreen extends StatelessWidget { 
   LeadScreen({super.key});
 
   final ChipController chipController = Get.put(ChipController());

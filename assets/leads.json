@@ -53,7 +53,13 @@
               "query_id": 8990,
               "type": "IMAGE",
               "content": "https://images.pexels.com/photos/13359140/pexels-photo-13359140.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-          }
+          },
+          {
+            "id": 51,
+            "query_id": 8990,
+            "type": "VIDEO",
+            "content": "assets/test.mp4"
+        }
         ]
       },
       
